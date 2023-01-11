@@ -1,0 +1,7 @@
+# model-metrics-plot 🚀 by isLinXu, GPL-3.0 license
+# Default ploting settings for model metrics
+
+data: "coco"
+mode: ""
+
+
