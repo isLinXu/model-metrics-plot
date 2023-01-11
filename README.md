@@ -52,3 +52,13 @@ cd model-metrics-plot
 python3 main.py
 ```
 
+or use your custom data csv
+
+```shell
+ python3 main.py -c 'csv_path' -n 'figture_name'
+```
+
+```shell
+ python3 main.py -c data/model_data.csv -n 'plot.jpg'
+```
+
