@@ -2,7 +2,7 @@
 
 ![](./img/project_logo.png)
 
-model-metrics-plot(mmp)
+model-metrics-plot(mmplot)
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
