@@ -55,9 +55,9 @@ python3 main.py
 或者，你可以使用自定义数据。
 
 ```shell
- python3 main.py -c 'csv_path' -n 'figture_name'
+ python3 main.py -c 'csv_path' -n 'figture_name' -t 'title_name' -x 'xlabel_name' -y 'ylabel_name' -f font_size
 ```
 
 ```shell
- python3 main.py -c data/model_data.csv -n 'plot.jpg'
+ python3 main.py -c data/model_data.csv -n 'plot.jpg'-t 'MS COCO Object Detection' -x 'PyTorch FP16 RTX3080(ms/img)' -y 'COCO Mask AP val' -f 10
 ```
