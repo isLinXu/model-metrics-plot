@@ -1,0 +1,17 @@
+model,branch,ms,fps,mAP
+YOLOv5,n,-1,-1,28
+YOLOv5,s,-1,-1,37.7
+YOLOv5,m,-1,-1,45.3
+YOLOv5,l,-1,-1,48.8
+YOLOv6,n,-1,-1,36.2
+YOLOv6,t,-1,-1,41.0 
+YOLOv6,s,-1,-1,44.0 
+YOLOv6,m,-1,-1,48.4 
+YOLOv6,l,-1,-1,51.0 
+YOLOv7,tiny,-1,-1,37.5 
+YOLOv7,l,-1,-1,50.9 
+YOLOv8,x,-1,-1,52.8
+PP-YOLOE,s,-1,-1,43.5 
+PP-YOLOE,m,-1,-1,49.5 
+PP-YOLOE,l,-1,-1,52.6
+PP-YOLOE,x,-1,-1,54.2

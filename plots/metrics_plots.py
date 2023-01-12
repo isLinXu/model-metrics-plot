@@ -47,7 +47,7 @@ def plot_metrics(df, fig_name, title_name='MS COCO Object Detection',
 
 
 if __name__ == '__main__':
-    csv_path = '/home/linxu/PycharmProjects/model-metrics-plot/data/Pytorch_models_data.csv'
+    csv_path = 'data/Pytorch_models_data.csv'
     fig_name = 'plot_metrics.jpg'
     df = pd_read_csv(csv_path)
     plot_metrics(df, fig_name)
