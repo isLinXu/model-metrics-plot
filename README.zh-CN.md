@@ -26,9 +26,13 @@ model-metrics-plot(mmp)
 
 ### 绘制结果
 
-![](./img/plot_metrics.jpg)
+data：data/Pytorch_models_data.csv
 
+> ![](./img/plot_metrics.jpg)
 
+data：data：data/PaddleYOLO_models_data.csv
+
+> ![](./img/paddle_plot_metrics.jpg)
 
 ---
 

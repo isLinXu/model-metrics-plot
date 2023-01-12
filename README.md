@@ -26,9 +26,13 @@ This project is developed based on libraries such as Pandas and Matplotlib, and 
 
 ### plot result
 
-![](./img/plot_metrics.jpg)
+- data：data/Pytorch_models_data.csv
 
+> ![](./img/plot_metrics.jpg)
 
+data：data：data/PaddleYOLO_models_data.csv
+
+> ![](./img/paddle_plot_metrics.jpg)
 
 ---
 
