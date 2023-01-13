@@ -19,6 +19,7 @@ def plot_metrics(df, fig_name, title_name='MS COCO Object Detection',
         ms_list = df[df['model'] == model_list[i]]['ms'].values
         fps_list = df[df['model'] == model_list[i]]['fps'].values
         map_list = df[df['model'] == model_list[i]]['mAP'].values
+        maker_list = df[df['model'] == model_list[i]]['maker'].values
 
         y_list = map_list
         t_list = []
@@ -30,8 +31,10 @@ def plot_metrics(df, fig_name, title_name='MS COCO Object Detection',
                 j = fps_to_ms(j)
                 t_list.append(j)
             x_list = t_list
-
-        plt.plot(x_list, y_list, marker='.', markersize=10)
+        print('ms_list', ms_list)
+        print('maker_list', maker_list)
+        # print('maker_list[i]', maker_list[i])
+        plt.plot(x_list, y_list, marker=maker_list[0], markersize=font_size)
         plt.title(title_name)
         plt.xlabel(xlabel_name)
         plt.ylabel(ylabel_name)
