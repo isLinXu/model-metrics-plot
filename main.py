@@ -19,13 +19,13 @@ def parse_opt(known=False):
 
 def main(opt):
     csv_path = opt.csv
-    fig_name = opt.fig_path
+    fig_path = opt.fig_path
     title_name = opt.title_name
     xlabel_name = opt.xlabel_name
     ylabel_name = opt.ylabel_name
     font_size = opt.font_size
     df = pd_read_csv(csv_path)
-    plot_metrics(df, fig_name, title_name, xlabel_name, ylabel_name, font_size)
+    plot_metrics(df, fig_path, title_name, xlabel_name, ylabel_name, font_size)
 
 
 if __name__ == '__main__':
