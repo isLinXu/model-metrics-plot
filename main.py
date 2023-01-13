@@ -19,7 +19,7 @@ def parse_opt(known=False):
 
 def main(opt):
     csv_path = opt.csv
-    fig_name = opt.fig_name
+    fig_name = opt.fig_path
     title_name = opt.title_name
     xlabel_name = opt.xlabel_name
     ylabel_name = opt.ylabel_name
