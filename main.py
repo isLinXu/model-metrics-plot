@@ -5,11 +5,9 @@ from utils.dataloader import pd_read_csv
 import argparse
 
 def parse_opt(known=False):
-
-    parser = argparse.ArgumentParser()
     parser = argparse.ArgumentParser(description="Quick use model-metrics-plot")
     parser.add_argument('-c', '--csv', default='data/Pytorch_models_data.csv', help="csv path")
-    parser.add_argument('-n', '--fig_name', default='plot_metrics.jpg', help="figure name")
+    parser.add_argument('-n', '--fig_path', default='output/plot_metrics.jpg', help="figure path")
     parser.add_argument('-t', '--title_name', default='MS COCO Object Detection', help="title_name")
     parser.add_argument('-x', '--xlabel_name', default='PyTorch FP16 RTX3080(ms/img)', help="xlabel_name")
     parser.add_argument('-y', '--ylabel_name', default='COCO Mask AP val', help="ylabel_name")
