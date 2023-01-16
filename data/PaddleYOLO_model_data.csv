@@ -1,27 +1,32 @@
-model,branch,ms,fps,mAP
-YOLOv5,n,2.6,-1,28
-YOLOv5,s,3.2,-1,37.6
-YOLOv5,m,5.2,-1,45.4
-YOLOv5,l,7.9,-1,48.9
-YOLOv5,x,13.7,-1,50.6
-YOLOv6,n,1.3,-1,36.1
-YOLOv6,t,2.1,-1,40.7
-YOLOv6,s,2.6,-1,43.4
-YOLOv6,m,5.0 ,-1,49.0 
-YOLOv6,l,7.9,-1,51.0 
-YOLOv6,l-silu,9.6,-1,51.7
-YOLOv7,l,7.4,-1,51.0 
-YOLOv7,x,12.2,-1,53.0 
-YOLOv8,n,2.4,-1,37.3
-YOLOv8,s,3.4,-1,44.9
-YOLOv8,m,6.5,-1,50.2
-YOLOv8,l,10.0 ,-1,52.8
-YOLOv8,x,15.1,-1,53.8
-YOLOX,s,3.0 ,-1,40.4
-YOLOX,m,5.8,-1,46.9
-YOLOX,l,9.3,-1,50.1
-YOLOX,x,16.6,-1,51.8
-PP-YOLOE,s,2.9 ,-1,43.0 
-PP-YOLOE,m,6.0 ,-1,49.0 
-PP-YOLOE,l,8.7,-1,51.4
-PP-YOLOE,x,14.9,-1,52.3
+model,branch,ms,fps,mAP,maker
+YOLOv5,n,2.6,-1,28,.
+YOLOv5,s,3.2,-1,37.6,.
+YOLOv5,m,5.2,-1,45.4,.
+YOLOv5,l,7.9,-1,48.9,.
+YOLOv5,x,13.7,-1,50.6,.
+YOLOv6,n,1.3,-1,36.1,.
+YOLOv6,t,2.1,-1,40.7,.
+YOLOv6,s,2.6,-1,43.4,.
+YOLOv6,m,5,-1,49,.
+YOLOv6,l,7.9,-1,51,.
+YOLOv6,l-silu,9.6,-1,51.7,.
+YOLOv7,l,7.4,-1,51,.
+YOLOv7,x,12.2,-1,53,.
+YOLOv8,n,2.4,-1,37.3,.
+YOLOv8,s,3.4,-1,44.9,.
+YOLOv8,m,6.5,-1,50.2,.
+YOLOv8,l,10,-1,52.8,.
+YOLOv8,x,15.1,-1,53.8,.
+YOLOX,s,3,-1,40.4,.
+YOLOX,m,5.8,-1,46.9,.
+YOLOX,l,9.3,-1,50.1,.
+YOLOX,x,16.6,-1,51.8,.
+RTMDet,t,2.8,-1,40.9,.
+RTMDet,s,3.3,-1,44.5,.
+RTMDet,m,6.4,-1,49.1,.
+RTMDet,l,10.2,-1,51.2,.
+RTMDet,x,18.0 ,-1,52.6,.
+PP-YOLOE+,s,2.9,-1,43.7,*
+PP-YOLOE+,m,6.0 ,-1,49.8,*
+PP-YOLOE+,l,8.7,-1,52.9,*
+PP-YOLOE+,x,14.9,-1,54.7,*
