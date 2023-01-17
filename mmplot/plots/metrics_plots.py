@@ -31,9 +31,6 @@ def plot_metrics(df, fig_name, title_name='MS COCO Object Detection',
                 j = fps_to_ms(j)
                 t_list.append(j)
             x_list = t_list
-        print('ms_list', ms_list)
-        print('maker_list', maker_list)
-        # print('maker_list[i]', maker_list[i])
         plt.plot(x_list, y_list, marker=maker_list[0], markersize=font_size)
         plt.title(title_name)
         plt.xlabel(xlabel_name)
