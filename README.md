@@ -18,7 +18,7 @@ This project is developed based on libraries such as Pandas and Matplotlib, and 
 
 ## 🥰Result
 
-### 绘制结果
+### plot
 
 | <img src="./img/plot_metrics.jpg" style="zoom:33%;" />       | ![](./img/paddle_plot_metrics.jpg)                           | <img src="./img/bar_chart_plot.jpg" style="zoom: 25%;" />    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
