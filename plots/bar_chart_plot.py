@@ -50,9 +50,7 @@ def bar_chart_plot(df, fig_path, value_type='mAP', title_name="MS COCO Object De
 
 if __name__ == '__main__':
     csv_path = '../data/MMYOLO_model_data.csv'
-    # csv_path = '../data/data1.csv'
-    # csv_path = '../data/Pytorch_models_data.csv'
-    fig_path = 'bar_chart_plot.jpg'
+    fig_path = '../output/bar_chart_plot.jpg'
     value_type = 'mAP'
     df = pd_read_csv(csv_path)
     bar_chart_plot(df, fig_path, value_type)
