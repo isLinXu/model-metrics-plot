@@ -55,11 +55,11 @@ def plot_chart(df,fig_path,is_grid,title_name,font_size):
     fig.savefig(fig_path, dpi=300, bbox_inches='tight', transparent=True)
 
 if __name__ == '__main__':
-    csv_path = '../data/llm_eval_data.csv'
+    csv_path = '../../data/llm_eval_data.csv'
     fig_path = 'plot_mult_chart.jpg'
     is_grid = False
     title_name = 'LLM Eval'
     plot_type = 'chart'
     font_size = 18
     df = pd_read_csv(csv_path)
-    plot_chart(df, fig_path, is_grid, title_name, font_size)
+    plot_chart(df, fig_path,is_grid,title_name,font_size)
