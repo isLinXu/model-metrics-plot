@@ -24,9 +24,9 @@ This project is developed based on libraries such as Pandas and Matplotlib, and 
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [data/Pytorch_models_data.csv](https://github.com/isLinXu/model-metrics-plot/blob/main/data/Pytorch_models_data.csv) | [data/PaddleYOLO_models_data.csv](https://github.com/isLinXu/model-metrics-plot/blob/main/data/PaddleYOLO_model_data.csv) | [data/MMYOLO_model_data.csv](https://github.com/isLinXu/model-metrics-plot/blob/main/data/MMYOLO_model_data.csv) |
 
-| <img src="./img/plot_mult_chart.jpg" style="zoom:33%;" />       | <img src="./img/plot_mult_chart.jpg" style="zoom:33%;" />     |     |
+| <img src="./img/plot_mult_chart.jpg" style="zoom:33%;" />       | <img src="./img/plot_mult_code_chart.jpg" style="zoom:33%;" />     |     |
 | ------------------------------------------------------------ |-----| ------------------------------------------------------------ |
-| [data/llm_eval_data.csv](https://github.com/isLinXu/model-metrics-plot/blob/main/data/llm_eval_data.csv) | [data/llm_eval_data.csv](https://github.com/isLinXu/model-metrics-plot/blob/main/data/llm_code_eval.csv)    | |
+| [data/llm_eval_data.csv](https://github.com/isLinXu/model-metrics-plot/blob/main/data/llm_eval_data.csv) | [data/llm_eval_data.csv](https://github.com/isLinXu/model-metrics-plot/blob/main/data/llm_code_eval.csv) | |
 
 ---
 
