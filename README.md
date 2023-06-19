@@ -24,6 +24,9 @@ This project is developed based on libraries such as Pandas and Matplotlib, and 
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [data/Pytorch_models_data.csv](https://github.com/isLinXu/model-metrics-plot/blob/main/data/Pytorch_models_data.csv) | [data/PaddleYOLO_models_data.csv](https://github.com/isLinXu/model-metrics-plot/blob/main/data/PaddleYOLO_model_data.csv) | [data/MMYOLO_model_data.csv](https://github.com/isLinXu/model-metrics-plot/blob/main/data/MMYOLO_model_data.csv) |
 
+| <img src="./img/plot_mult_chart.jpg" style="zoom:33%;" />       |                      |     |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [data/llm_eval_data.csv](https://github.com/isLinXu/model-metrics-plot/blob/main/data/llm_eval_data.csv) |  | |
 
 ---
 
@@ -60,6 +63,10 @@ or use your custom data csv
 ```
 
 ```shell
- python3 main.py -c data/model_data.csv -n 'plot.jpg'-p 'line' -t 'MS COCO Object Detection' -x 'PyTorch FP16 RTX3080(ms/img)' -y 'COCO Mask AP val' -f 10 -v 'mAP' -r '#0000FF'
+ python3 main.py -c data/model_data.csv -n 'plot.jpg' -p 'line' -t 'MS COCO Object Detection' -x 'PyTorch FP16 RTX3080(ms/img)' -y 'COCO Mask AP val' -f 10 -v 'mAP' -r '#0000FF'
 ```
 
+
+```shell
+ python3 main.py -c data/model_data.csv -n 'plot.jpg' -p 'chart' -t 'MS COCO Object Detection' -f 10
+```
