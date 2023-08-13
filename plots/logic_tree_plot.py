@@ -1,43 +1,22 @@
-# import matplotlib.pyplot as plt
-#
-# tree = {
-#     'A': ['B', 'C'],
-#     'B': ['D', 'E'],
-#     'C': ['F', 'G'],
-#     'D': ['H', 'I'],
-#     'E': [],
-#     'F': [],
-#     'G': [],
-#     'H': [],
-#     'I': []
-# }
-# def plot_tree(node, tree, x, y, dx, dy, ax):
-#     ax.text(x, y, node, ha='center', va='center', bbox=dict(facecolor='white', edgecolor='black', boxstyle='circle'))
-#     children = tree[node]
-#     if len(children) == 0:
-#         return
-#     dx = dx / len(children)
-#     x_left = x - dx * (len(children) - 1) / 2
-#     for child in children:
-#         ax.plot([x, x_left], [y, y-dy], '-k')
-#         plot_tree(child, tree, x_left, y-dy, dx, dy, ax)
-#         x_left += dx
-#
-# # 创建画布和子图
-# fig, ax = plt.subplots()
-# # 设置坐标轴范围
-# ax.set_xlim(0, 10)
-# ax.set_ylim(0, 10)
-# # 调用绘制函数
-# plot_tree('A', tree, 5, 10, 8, 2, ax)
-# # 隐藏坐标轴
-# ax.axis('off')
-# # 显示图形
-# plt.show()
 
 import matplotlib.pyplot as plt
 
-def draw_tree(tree, root_node, x, y, dx, dy, node_style=None, branch_style=None):
+def draw_tree(tree, root_node, x, y, dx, dy, node_style=None, branch_style=None,debug=False):
+    '''
+    绘制逻辑树
+    Args:
+        tree:  dict, 树的结构
+        root_node:  str, 根节点
+        x: float, 根节点的x坐标
+        y: float, 根节点的y坐标
+        dx: float, x方向的间距
+        dy: float, y方向的间距
+        node_style: 节点样式
+        branch_style: 分支样式
+
+    Returns:
+
+    '''
     def plot_node(node, x, y, dx, dy, ax):
         ax.text(x, y, node, ha='center', va='center', bbox=node_style)
 
@@ -59,7 +38,8 @@ def draw_tree(tree, root_node, x, y, dx, dy, node_style=None, branch_style=None)
     plot_node(root_node, x, y, dx, dy, ax)
     plot_branch(root_node, tree[root_node], x, y, dx, dy, ax)
 
-    ax.axis('off')
+    if debug:
+        ax.axis('off')
     plt.show()
 
 if __name__ == '__main__':
