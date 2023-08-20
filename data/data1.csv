@@ -1,0 +1,7 @@
+date,category,value,parent,child
+2022-01-01,A,10,root,child1
+2022-01-02,A,20,child1,child2
+2022-01-03,A,30,child2,leaf1
+2022-01-01,B,15,root,child3
+2022-01-02,B,25,child3,child4
+2022-01-03,B,35,child4,leaf2
