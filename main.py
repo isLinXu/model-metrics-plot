@@ -1,6 +1,7 @@
 from plots.bar_chart_plot import bar_chart_plot
 from plots.line_metrics_plots import plot_metrics
 from plots.mult_chart_plot import plot_chart
+from plots.leida_chart_plot import plot_evaluation_chart
 from utils.dataloader import pd_read_csv
 
 import argparse
@@ -42,7 +43,9 @@ def main(opt):
     elif plot_type == 'bar':
         bar_chart_plot(df, fig_path, value_type, title_name, xlabel_name, colors, is_grid)
     elif plot_type == 'chart':
-        plot_chart(df, fig_path,is_grid,title_name,font_size)
+        plot_chart(df, fig_path, is_grid, title_name, font_size)
+    elif plot_type == 'leida':
+        plot_evaluation_chart(csv_path, fig_path, font_size)
 
 if __name__ == '__main__':
     opt = parse_opt()
