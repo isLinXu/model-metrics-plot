@@ -59,10 +59,35 @@ python3 main.py
 
 或者，你可以使用自定义数据。
 
+
 ```shell
  python3 main.py -c 'csv_path' -n 'figture_name' -p 'plot_type' -t 'title_name' -x 'xlabel_name' -y 'ylabel_name' -f font_size -g False -v 'value_type' -r 'colors' 
 ```
 
+#### line
+
+> python3 main.py -c data/model_data.csv -n 'plot.jpg' -p 'line' -t 'MS COCO Object Detection' -x 'PyTorch FP16 RTX3080(ms/img)' -y 'COCO Mask AP val' -f 10 -v 'mAP' -r '#0000FF'
+>
+
 ```shell
- python3 main.py -c data/model_data.csv -n 'plot.jpg'-p 'line' -t 'MS COCO Object Detection' -x 'PyTorch FP16 RTX3080(ms/img)' -y 'COCO Mask AP val' -f 10 -v 'mAP' -r '#0000FF'
+python3 main.py -c data/PaddleYOLO_extra_model_data.csv -n 'plot.jpg' -p 'line' -t 'MS COCO Object Detection' -x 'PyTorch FP16 RTX3080(ms/img)' -y 'COCO Mask AP val' -f 10 -v 'mAP' -r '#0000FF'
 ```
+
+<img width="639" alt="image" src="https://github.com/isLinXu/issues/assets/59380685/be3d7dca-e2b4-4408-9de1-0e04bd946ca4">
+
+#### bar
+
+```shell
+python3 main.py -c data/MMYOLO_model_data.csv -p bar
+```
+
+<img width="640" alt="image" src="https://github.com/isLinXu/issues/assets/59380685/e6aae12f-e969-4df0-adb4-2a1f3f899094">
+
+#### leida
+
+
+```shell
+python3 main.py -c data/mllm_acc_eval-csv1029.csv -p leida
+```
+
+![image](https://github.com/isLinXu/issues/assets/59380685/7fa2d90d-55bc-4fa9-8e0c-899726e22425)
