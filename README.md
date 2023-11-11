@@ -24,9 +24,9 @@ This project is developed based on libraries such as Pandas and Matplotlib, and 
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [data/Pytorch_models_data.csv](https://github.com/isLinXu/model-metrics-plot/blob/main/data/Pytorch_models_data.csv) | [data/PaddleYOLO_models_data.csv](https://github.com/isLinXu/model-metrics-plot/blob/main/data/PaddleYOLO_model_data.csv) | [data/MMYOLO_model_data.csv](https://github.com/isLinXu/model-metrics-plot/blob/main/data/MMYOLO_model_data.csv) |
 
-| <img src="./img/plot_mult_chart.jpg" style="zoom:20%;" />                                                | <img src="./img/plot_mult_code_chart.jpg" style="zoom:20%;" />                                           | <img src="./img/mllm_chart_acc1.png" alt="mllm_chart_acc1" style="zoom:33%;" /> |
-|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------| ------------------------------------------------------------ |
-| [data/llm_eval_data.csv](https://github.com/isLinXu/model-metrics-plot/blob/main/data/llm_eval_data.csv) | [data/llm_eval_data.csv](https://github.com/isLinXu/model-metrics-plot/blob/main/data/llm_code_eval.csv) | |
+| <img src="./img/plot_mult_chart.jpg" style="zoom:20%;" />                                                | <img width="545" alt="image" src="https://github.com/isLinXu/issues/assets/59380685/7936e608-c792-4f00-83a6-69f458a939f9"> | <img src="./img/mllm_chart_acc1.png" alt="mllm_chart_acc1" style="zoom:33%;" /> |
+|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------| ------------------------------------------------------------ |
+| [data/llm_eval_data.csv](https://github.com/isLinXu/model-metrics-plot/blob/main/data/llm_eval_data.csv) | [data/tree.json](https://github.com/isLinXu/model-metrics-plot/blob/main/data/tree.json)                                   | |
 
 ---
 
@@ -89,3 +89,8 @@ python3 main.py -c data/mllm_acc_eval-csv1029.csv -p leida
 ```
 
 ![image](https://github.com/isLinXu/issues/assets/59380685/7fa2d90d-55bc-4fa9-8e0c-899726e22425)
+
+#### tree
+
+<img width="545" alt="image" src="https://github.com/isLinXu/issues/assets/59380685/7936e608-c792-4f00-83a6-69f458a939f9">
+
