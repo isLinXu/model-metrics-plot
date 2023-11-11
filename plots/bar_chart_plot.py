@@ -84,4 +84,4 @@ if __name__ == '__main__':
     bar_chart_plot(df, fig_path, value_type)
 
     # 示例：绘制 'Metric' 列和 'Java' 列的柱状图
-    bar_chart('../../data/llm_code_eval.csv', 'Metric', 'Java')
+    bar_chart('../data/llm_code_eval.csv', 'Metric', 'Java')
