@@ -14,6 +14,14 @@ model-metrics-plot(mmplot)
 
 This project is developed based on libraries such as Pandas and Matplotlib, and can be used to draw line graphs of multiple index parameters such as algorithm accuracy and speed of multiple deep learning models.
 
+## features
+use csv data to plot
+- [x] line plot
+- [x] bar plot
+- [x] radar plot
+- [x] tree plot
+- [x] custom plot
+
 ---
 
 ## 🥰Result
@@ -83,11 +91,11 @@ python3 main.py -c data/MMYOLO_model_data.csv -p bar
 
 <img width="640" alt="image" src="https://github.com/isLinXu/issues/assets/59380685/e6aae12f-e969-4df0-adb4-2a1f3f899094">
 
-#### leida
+#### radar
 
 
 ```shell
-python3 main.py -c data/mllm_acc_eval-csv1029.csv -p leida
+python3 main.py -c data/mllm_acc_eval-csv1029.csv -p radar
 ```
 
 ![image](https://github.com/isLinXu/issues/assets/59380685/7fa2d90d-55bc-4fa9-8e0c-899726e22425)

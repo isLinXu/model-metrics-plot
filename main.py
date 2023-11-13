@@ -44,7 +44,7 @@ def main(opt):
         bar_chart_plot(df, fig_path, value_type, title_name, xlabel_name, colors, is_grid)
     elif plot_type == 'chart':
         plot_chart(df, fig_path, is_grid, title_name, font_size)
-    elif plot_type == 'leida':
+    elif plot_type == 'radar':
         plot_evaluation_chart(csv_path, fig_path, font_size)
 
 if __name__ == '__main__':
