@@ -4,8 +4,10 @@ import pandas as pd
 import numpy as np
 
 from utils.colors import colors_dark
+from utils.fonts import font_new_roman
 
-def plot_evaluation_chart(csv_path, output_path='evaluation_chart.png', font_size=25, figsize=(16, 16)):
+
+def plot_evaluation_chart(csv_path, output_path='evaluation_chart_1116.png', font_size=25, figsize=(16, 16)):
     # 设置全局字体为Times New Roman
     rcParams['font.family'] = 'Times New Roman'
 
@@ -26,9 +28,6 @@ def plot_evaluation_chart(csv_path, output_path='evaluation_chart.png', font_siz
     plt.xticks(fontsize=font_size)
     plt.yticks(fontsize=font_size)
 
-    # 设置字体属性
-    font1 = {'family': 'Times New Roman', 'weight': 'bold', 'size': 18}
-
     # 隐藏最外圈的圆
     ax.spines['polar'].set_visible(False)
 
@@ -41,7 +40,8 @@ def plot_evaluation_chart(csv_path, output_path='evaluation_chart.png', font_siz
         ax.plot(angles, data, label=label_name, linewidth=2.0)  # 绘制多边形
 
         # 设置图例属性
-        legend = ax.legend(bbox_to_anchor=(0.5, -0.15), loc='lower center', ncol=3, prop=font1)
+        num_models = len(values)
+        legend = ax.legend(bbox_to_anchor=(0.5, -0.15), loc='lower center', ncol=num_models, prop=font_new_roman)
         for line in legend.get_lines():
             line.set_linewidth(5)
 
@@ -53,6 +53,9 @@ def plot_evaluation_chart(csv_path, output_path='evaluation_chart.png', font_siz
     plt.show()
     fig.savefig(output_path, dpi=300, bbox_inches='tight', transparent=True)
 
+
 if __name__ == '__main__':
-    csv_path = '/Users/gatilin/PycharmProjects/model-metrics-plot/data/mllm_acc_eval-csv1013.csv'
+    # csv_path = '../data/mllm_acc_eval-csv1029.csv'
+    # csv_path = '../data/mllm_acc_eval-csv1116.csv'
+    csv_path = '../data/csv/mllm_acc_eval-csv1110.csv'
     plot_evaluation_chart(csv_path)
