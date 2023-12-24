@@ -11,10 +11,8 @@ def extract_data_from_txt(file_path):
     end_index = None
 
     for i, line in enumerate(lines):
-        # if line == start_flag:
         if line.startswith(start_flag):
             start_index = i + 1
-        # elif line == end_flag:
         elif line.startswith(end_flag):
             end_index = i - 1
             break
@@ -34,11 +32,16 @@ def extract_data_from_txt(file_path):
     return operators_data
 
 
-def plot_pie_chart(operators_data, file_name):
+def plot_pie_chart(operators_data, file_name, top_n=10):
     print(operators_data)
     labels = [operator for operator, _ in operators_data]
     sizes = [percentage for _, percentage in operators_data]
 
+    if len(labels) > top_n:
+        labels = labels[:top_n]
+        sizes = sizes[:top_n]
+        labels.append('others')
+        sizes.append(100 - sum(sizes))
     # Set the size of the figure using figsize parameter
     fig, ax = plt.subplots(figsize=(12, 8))
     wedges, texts, autotexts = ax.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=90)
