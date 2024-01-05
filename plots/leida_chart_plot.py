@@ -1,15 +1,22 @@
+import os
 import matplotlib.pyplot as plt
-from matplotlib import rcParams
 import pandas as pd
 import numpy as np
+from adjustText import adjust_text
 
-from utils.colors import colors_dark
+from utils.colors import colors_dark, colors_light, colors_classic, colors_common, colors_dark_private, \
+    colors_common_private, colors_hex
 from utils.fonts import font_new_roman
 
 
-def plot_evaluation_chart(csv_path, output_path='evaluation_chart_1116.png', font_size=25, figsize=(16, 16)):
-    # 设置全局字体为Times New Roman
-    rcParams['font.family'] = 'Times New Roman'
+def plot_evaluation_chart(csv_path, output_path='evaluation_chart.png', font_family='Times New Roman', font_size=25,
+                          figsize=(16, 16), colors=None):
+    if colors is None:
+        colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd',
+                  '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22','#17becf']
+
+    # 设置全局字体
+    plt.rcParams['font.family'] = font_family
 
     # 读取CSV文件并提取数据
     data_frame = pd.read_csv(csv_path)
@@ -32,18 +39,39 @@ def plot_evaluation_chart(csv_path, output_path='evaluation_chart_1116.png', fon
     ax.spines['polar'].set_visible(False)
 
     # 绘制每一行数据的多边形
+    texts = []
     for i, row in enumerate(values):
-        cr = colors_dark[i]
+        cr = colors[i % len(colors)]
         data = np.concatenate((row, [row[0]]))  # 闭合多边形
         label_name = model_labels[i]
-        ax.fill(angles, data, alpha=0.25)  # 填充多边形
-        ax.plot(angles, data, label=label_name, linewidth=2.0)  # 绘制多边形
+        ax.fill(angles, data, alpha=0.25, color=cr)  # 填充多边形
+        ax.plot(angles, data, label=label_name, linewidth=2.0, color=cr)  # 绘制多边形
+
+        # 添加数据点上的文本
+        for j, value in enumerate(row):
+            angle_rad = angles[j]
+            if angle_rad == 0:
+                ha, distance = 'center', 10
+            elif 0 < angle_rad < np.pi:
+                ha, distance = 'left', 1
+            elif angle_rad == np.pi:
+                ha, distance = 'center', 10
+            else:
+                ha, distance = 'right', 1
+            text = ax.text(angle_rad, value + distance, f'{value:.2f}', size=font_size,
+                           color=cr, horizontalalignment=ha)
+            texts.append(text)
 
         # 设置图例属性
         num_models = len(values)
-        legend = ax.legend(bbox_to_anchor=(0.5, -0.15), loc='lower center', ncol=num_models, prop=font_new_roman)
+        legend = ax.legend(bbox_to_anchor=(0.5, -0.15), loc='lower center', ncol=num_models, prop={'size': font_size})
         for line in legend.get_lines():
             line.set_linewidth(5)
+
+    # 调整文本位置以避免重叠
+    adjust_text(texts, expand_text=(1.05, 1.2), expand_points=(1.05, 1.2),
+                force_text=(0.1, 0.25),
+                force_points=(0.2, 0.5), ax=ax)
 
     # 设置刻度、标签和标题
     ax.set_xticks(angles[:-1])
@@ -55,7 +83,6 @@ def plot_evaluation_chart(csv_path, output_path='evaluation_chart_1116.png', fon
 
 
 if __name__ == '__main__':
-    # csv_path = '../data/mllm_acc_eval-csv1029.csv'
-    # csv_path = '../data/mllm_acc_eval-csv1116.csv'
-    csv_path = '../data/csv/mllm_acc_eval-csv1110.csv'
-    plot_evaluation_chart(csv_path)
+    csv_path = '/Users/gatilin/PycharmProjects/model-metrics-plot/data/research/mllm_acc_eval-csv_private_1230.csv'
+    output_path = 'chart/evaluation_chart_private_1230.png'
+    plot_evaluation_chart(csv_path, output_path)
