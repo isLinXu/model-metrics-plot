@@ -101,7 +101,10 @@ def draw_tree(tree, root_node, x, y, dx, dy, node_style=None, branch_style=None,
 
 if __name__ == '__main__':
     # 从JSON文件中读取树结构
-    with open('../data/tree.json', 'r') as f:
+    log_tree_path = '../data/mllm.json'
+    # log_tree_path = '../data/tree.json'
+
+    with open(log_tree_path, 'r') as f:
         tree = json.load(f)
 
     # color = 'white'
@@ -114,4 +117,4 @@ if __name__ == '__main__':
     branch_style = dict(color=color, linestyle='-')
 
     # 调用 draw_tree 函数绘制分支树
-    draw_tree(tree, 'A', 5, 10, 8, 2, node_style, branch_style)
+    draw_tree(tree, 'FlanT5xxl', 5, 10, 8, 2, node_style, branch_style)
