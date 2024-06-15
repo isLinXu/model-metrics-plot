@@ -26,6 +26,8 @@ def pie_chart(data_file, label_col, value_col):
     # 显示图表
     plt.show()
 
+    plt.savefig('../output/{}_vs_{}.png'.format(label_col, value_col))
+
 
 
 if __name__ == '__main__':
