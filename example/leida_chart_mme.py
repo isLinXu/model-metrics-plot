@@ -89,8 +89,9 @@ if __name__ == '__main__':
     # output_path = 'chart/evaluation_chart_public_1211.png'
     # output_path = 'chart/evaluation_chart_vicuna_1125.png'
 
-    csv_path = '/Users/gatilin/PycharmProjects/model-metrics-plot/data/research/mllm_acc_eval-csv_private_1230.csv'
-    output_path = 'chart/evaluation_chart_private_1230.png'
-
+    # csv_path = '/Users/gatilin/PycharmProjects/model-metrics-plot/data/research/mllm_acc_eval-csv_private_1230.csv'
+    # output_path = 'chart/evaluation_chart_private_1230.png'
+    csv_path = '/Users/gatilin/PycharmProjects/model-metrics-plot/data/research/mllm_acc_eval-csv_private_0128.csv'
+    output_path = '/Users/gatilin/PycharmProjects/model-metrics-plot/plots/chart/evaluation_chart_public_0128.png'
 
     plot_evaluation_chart(csv_path,output_path)

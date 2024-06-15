@@ -9,6 +9,17 @@ from utils.colors import colors_dark, colors_light, colors_classic, colors_commo
 from utils.fonts import font_new_roman
 
 def plot_evaluation_chart(csv_path, output_path='evaluation_chart.png', figsize=(16, 16), style=None):
+    '''
+    绘制雷达图
+    Args:
+        csv_path:  csv文件路径
+        output_path:  图片保存路径
+        figsize: 图片大小
+        style: 图表样式
+
+    Returns:
+
+    '''
     if style is None:
         style = {
             'font_family': 'Times New Roman',
@@ -83,6 +94,8 @@ def plot_evaluation_chart(csv_path, output_path='evaluation_chart.png', figsize=
     fig.savefig(output_path, dpi=300, bbox_inches='tight', transparent=True)
 
 if __name__ == '__main__':
-    csv_path = '/Users/gatilin/PycharmProjects/model-metrics-plot/data/research/mllm_acc_eval-csv_private_1230.csv'
-    output_path = 'chart/evaluation_chart_private_1230.png'
+    # csv_path = '/Users/gatilin/PycharmProjects/model-metrics-plot/data/research/mllm_acc_eval-csv_private_1230.csv'
+    # output_path = 'chart/evaluation_chart_private_1230.png'
+    csv_path = '/Users/gatilin/PycharmProjects/model-metrics-plot/data/research/mllm_acc_eval-csv_private_0128.csv'
+    output_path = 'chart/evaluation_chart_private_0128.png'
     plot_evaluation_chart(csv_path, output_path)
