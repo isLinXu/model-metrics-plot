@@ -56,7 +56,11 @@ def plot_pie_chart(operators_data, file_name, top_n=10):
 if __name__ == "__main__":
     # file_path = "/Users/gatilin/PycharmProjects/house-of-model-cards1/model_cards/timm/vgg/vgg11/vgg11.txt"
     # file_path = "/Users/gatilin/PycharmProjects/onnx-easy-tools/alexnet/alexnet.txt"
-    file_path = '/Users/gatilin/PycharmProjects/onnx-easy-tools/infos/mmyolo/yolov5_l-p6-v62_syncbn_fast_8xb16-300e_coco/yolov5_l-p6-v62_syncbn_fast_8xb16-300e_coco.txt'
+    # file_path = '/Users/gatilin/PycharmProjects/onnx-easy-tools/infos/mmyolo/yolov5_l-p6-v62_syncbn_fast_8xb16-300e_coco/yolov5_l-p6-v62_syncbn_fast_8xb16-300e_coco.txt'
+    # file_path = '/Users/gatilin/PycharmProjects/onnx-easy-tools/infos/mmyolo/yolov5_l-p6-v62_syncbn_fast_8xb16-300e_coco/yolov5_l-p6-v62_syncbn_fast_8xb16-300e_coco.txt'
+    # file_path = '/Users/gatilin/PycharmProjects/onnx-easy-tools/infos/detectron2/Cityscapes/mask_rcnn_R_50_FPN/mask_rcnn_R_50_FPN.txt'
+    # file_path = '/Users/gatilin/PycharmProjects/onnx-easy-tools/infos/detectron2/COCO-Detection/rpn_R_50_C4_1x/rpn_R_50_C4_1x.txt'
+    file_path = '/Users/gatilin/PycharmProjects/onnx-easy-tools/vgg16/vgg16.txt'
     file_name = file_path.split('/')[-1].split('.')[0]
     operators_data = extract_data_from_txt(file_path)
     plot_pie_chart(operators_data, file_name)
