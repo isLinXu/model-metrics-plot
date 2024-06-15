@@ -1,0 +1,8 @@
+Model,FPS,mAP,Category
+GLIPv1-T,5,30,GLIPv1-T
+GLIPv2-T,7,32,GLIPv2-T
+Grounding DINO-T,6,31,Grounding DINO-T
+DetCLIP-T,4,29,DetCLIP-T
+YOLO-World-S,50,40,YOLO-World-S
+YOLO-World-M,60,42,YOLO-World-M
+YOLO-World-L,70,45,YOLO-World-L

@@ -5,7 +5,7 @@ import pandas as pd
 
 # 读取Excel文件
 input_file = "/Users/gatilin/youtu-work/mllm.xlsx"  # 请替换为你的Excel文件路径
-output_file = "output.xlsx"  # 输出文件路径
+output_file = "output/output.xlsx"  # 输出文件路径
 df = pd.read_excel(input_file)
 
 # 获取所有数值列的列名

@@ -47,7 +47,8 @@ def plot_bar_graphs(df, numeric_columns, string_columns, show_label=True):
             sorted_df = df.sort_values(by=col, ascending=False)  # 按照数值列从高到低排序
             plt.figure(figsize=(16, 12))  # 设置图形大小
             ax = sorted_df.plot.bar(x=str_col, y=col, legend=False)
-            plt.title(f'Bar plot of {str_col} by {col}')
+            # plt.title(f'Bar plot of {str_col} by {col}')
+            plt.title(f'Bar plot of {str_col} by Perception')
             plt.xlabel(str_col)
             plt.ylabel(col)
             plt.tight_layout()  # 自适应调整布局
@@ -65,8 +66,8 @@ def plot_bar_graphs(df, numeric_columns, string_columns, show_label=True):
 
 
 if __name__ == '__main__':
-    input_file = "/Users/gatilin/youtu-work/mllm.xlsx"  # 请替换为你的Excel文件路径
-    output_file = "../utils/output/output1.xlsx"  # 输出文件路径
+    input_file = "../data/mllm_per_1125.xlsx"  # 请替换为你的Excel文件路径
+    output_file = "output_1125_cog.xlsx"  # 输出文件路径
     df = pd.read_excel(input_file)
 
     numeric_columns = df.select_dtypes(include=['number']).columns.tolist()
