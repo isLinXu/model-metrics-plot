@@ -4,9 +4,9 @@ import pandas as pd
 import numpy as np
 from adjustText import adjust_text
 
-from utils.colors import colors_dark, colors_light, colors_classic, colors_common, colors_dark_private, \
-    colors_common_private, colors_hex
-from utils.fonts import font_new_roman
+# from utils.colors import colors_dark, colors_light, colors_classic, colors_common, colors_dark_private, \
+#     colors_common_private, colors_hex
+# from utils.fonts import font_new_roman
 
 def plot_evaluation_chart(csv_path, output_path='evaluation_chart.png', figsize=(16, 16), style=None):
     '''
@@ -43,8 +43,8 @@ def plot_evaluation_chart(csv_path, output_path='evaluation_chart.png', figsize=
     angles += angles[:1]
 
     # 创建极坐标图并设置大小
-    fig, ax = plt.subplots(figsize=figsize, subplot_kw=dict(polar=True))
-
+    # fig, ax = plt.subplots(figsize=figsize, subplot_kw=dict(polar=True))
+    fig, ax = plt.subplots(figsize=(16, 16), subplot_kw=dict(polar=True))
     # 设置坐标标签字体大小
     plt.xticks(fontsize=style['font_size'])
     plt.yticks(fontsize=style['font_size'])
