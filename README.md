@@ -15,6 +15,11 @@ model-metrics-plot(mmplot)
 This project is developed based on libraries such as Pandas and Matplotlib, and can be used to draw line graphs of multiple index parameters such as algorithm accuracy and speed of multiple deep learning models.
 
 ## features
+
+use txt or log file to plot
+
+- [x] loss plot
+
 use csv data to plot
 - [x] line plot
 - [x] bar plot
@@ -27,6 +32,8 @@ use csv data to plot
 ## 🥰Result
 
 ### plot
+
+<img width="1065" alt="image" src="https://github.com/user-attachments/assets/b288ffe2-ef22-48bf-83f5-b48356334f7a">
 
 | <img src="./img/plot_metrics.jpg" style="zoom:33%;" />       | ![](./img/paddle_plot_metrics.jpg)                           | <img src="./img/bar_chart_plot.jpg" style="zoom: 25%;" />    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
